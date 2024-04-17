@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logistics Data App</title>
+</head>
+<body>
+    <h1>Logistics Data App</h1>
+    <form method="post">
+        <label for="origin">Origin:</label>
+        <input type="text" name="origin" required><br>
+
+        <label for="destination">Destination:</label>
+        <input type="text" name="destination" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" required><br>
+
+        <label for="unit_type">Unit Type:</label>
+        <select name="unit_type" required>
+            <option value="container20">20ft Container</option>
+            <option value="container40">40ft Container</option>
+            <option value="container40HC">40ft HC Container</option>
+            <option value="container45HC">45ft HC Container</option>
+            <option value="pallets">Pallets</option>
+            <option value="boxes">Boxes</option>
+        </select><br>
+
+        <label for="unit_weight">Unit Weight (Kg):</label>
+        <input type="number" name="unit_weight" required><br>
+
+        <label for="unit_volume">Unit Volume (CBM):</label>
+        <input type="number" name="unit_volume" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
